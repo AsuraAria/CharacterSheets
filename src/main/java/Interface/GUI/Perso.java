@@ -65,6 +65,9 @@ public class Perso extends AbstractGUI {
     public TextArea mvtTXT;
     public TextArea walkTXT;
     public TextArea runTXT;
+    public TextArea ttxpTXT;
+    public Text leftxpTXT;
+    public Text usedxpTXT;
 
     private JsonUtility JU = new JsonUtility();
     public Node[][] caracNodeArray = new Node[][]{};
@@ -191,9 +194,15 @@ public class Perso extends AbstractGUI {
         descArray = loadDescArray();
         pointArray = loadPointArray();
         caracNodeArray =  gridPaneToArray(tabCarac, 4,11);
+        updateXP();
         loadFilesInfos();
         loadCarac();
         writeCompt();
+    }
+
+    private void updateXP()
+    {
+        leftxpTXT.setText(String.valueOf(Integer.parseInt(ttxpTXT.getText()) - Integer.parseInt(usedxpTXT.getText())) + " xp");
     }
 
     private ArrayList<String> loadPointArray()
@@ -207,6 +216,7 @@ public class Perso extends AbstractGUI {
         Array.add(mvtTXT.getText());
         Array.add(walkTXT.getText());
         Array.add(runTXT.getText());
+        Array.add(ttxpTXT.getText());
         return Array;
     }
 
@@ -337,8 +347,17 @@ public class Perso extends AbstractGUI {
         ((TextArea)caracNodeArray[1][10]).setText(JU.searchFiche(JSONPath,"Caractéristiques", "Soc"));
 
         //POINT
+        dpTXT.setText(JU.searchFiche(JSONPath,"Points", "Destin"));
+        luckpTXT.setText(JU.searchFiche(JSONPath,"Points", "Chance"));
+        respTXT.setText(JU.searchFiche(JSONPath,"Points", "Résilience"));
+        detPTXT.setText(JU.searchFiche(JSONPath,"Points", "Détermination"));
+        motivTXT.setText(JU.searchFiche(JSONPath,"Points", "Motivation"));
+        mvtTXT.setText(JU.searchFiche(JSONPath,"Points", "Mouvement"));
+        walkTXT.setText(JU.searchFiche(JSONPath,"Points", "Marche"));
+        runTXT.setText(JU.searchFiche(JSONPath,"Points", "Course"));
+        ttxpTXT.setText(JU.searchFiche(JSONPath,"Points", "Expérience"));
 
-
+        refresh();
     }
 
     public void saveClicked(ActionEvent actionEvent)

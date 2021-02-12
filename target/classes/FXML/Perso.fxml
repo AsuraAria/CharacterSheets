@@ -182,11 +182,11 @@
                                              </rowConstraints>
                                              <children>
                                                 <TextArea fx:id="ttxpTXT" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
-                                                <Text fx:id="leftxpTXT" strokeType="OUTSIDE" strokeWidth="0.0" text="0xp" textAlignment="CENTER" wrappingWidth="80.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                <Text fx:id="leftxpTXT" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Totale" textAlignment="CENTER" wrappingWidth="80.0" />
                                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dépensée" textAlignment="CENTER" wrappingWidth="80.0" GridPane.columnIndex="1" />
                                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Restante" textAlignment="CENTER" wrappingWidth="80.0" GridPane.columnIndex="2" />
-                                                <Text fx:id="usedxpTXT" strokeType="OUTSIDE" strokeWidth="0.0" text="0xp" textAlignment="CENTER" wrappingWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Text fx:id="usedxpTXT" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                              </children>
                                           </GridPane>
                                        </children>
