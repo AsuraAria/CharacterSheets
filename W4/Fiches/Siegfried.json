@@ -1,0 +1,31 @@
+[
+  {
+    "Description": {
+      "Statut": "Argent 2",
+      "Taille": "1m67",
+      "Yeux": "Gris pâles",
+      "Race": "Humain",
+      "Classe": "Guerrier",
+      "Échelon": "Prêtre-guerrier",
+      "Nom": "Siegfried",
+      "Carrière": "Prêtre-guerrier",
+      "Schéma": "Novice, prêtre-guerrier",
+      "Cheveux": "Gris",
+      "Age": "37"
+    }
+  },
+  {
+    "Caracteristiques": {
+      "CC": "33",
+      "CT": "24",
+      "E": "35",
+      "F": "35",
+      "Ag": "31",
+      "Dex": "29",
+      "Soc": "38",
+      "FM": "37",
+      "I": "31",
+      "Int": "38"
+    }
+  }
+]
