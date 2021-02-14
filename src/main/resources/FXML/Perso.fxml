@@ -7,7 +7,6 @@
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -1146,7 +1145,7 @@
                                     <Insets left="5.0" right="5.0" top="10.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <ComboBox fx:id="typechoiceAugm" onAction="#typeSelected" prefWidth="175.0">
+                              <ComboBox fx:id="typechoiceAugm" onAction="#updateAugmentationSelection" prefWidth="175.0">
                                  <FlowPane.margin>
                                     <Insets left="5.0" right="5.0" top="10.0" />
                                  </FlowPane.margin>
@@ -1198,12 +1197,7 @@
                               <Insets top="10.0" />
                            </opaqueInsets>
                         </FlowPane>
-                        <TableView fx:id="advTable" prefHeight="917.0" prefWidth="1015.0">
-                          <columns>
-                            <TableColumn prefWidth="601.0" text="Nom" />
-                            <TableColumn minWidth="0.0" prefWidth="197.0" text="Nombre d'augmentations" />
-                              <TableColumn prefWidth="216.0" text="Coût" />
-                          </columns>
+                        <TableView fx:id="advTable" editable="true" prefHeight="917.0" prefWidth="1000.0">
                            <opaqueInsets>
                               <Insets top="10.0" />
                            </opaqueInsets>
