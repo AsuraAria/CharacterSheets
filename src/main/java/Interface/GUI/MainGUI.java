@@ -68,7 +68,7 @@ public class MainGUI extends AbstractGUI {
 
     public void selectB1(ActionEvent actionEvent) throws IOException
     {
-        framework.next(Perso.FXML, null);
+        framework.next(PersoGUI.FXML, null);
     }
 
 

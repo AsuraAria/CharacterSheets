@@ -14,12 +14,6 @@
     <top>
         <StackPane BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="150.0" fitWidth="680.0" pickOnBounds="true" preserveRatio="true">
-                    <Image url="@../Images/title.png" />
-                    <StackPane.margin>
-                        <Insets bottom="30.0" left="80.0" right="80.0" top="30.0" />
-                    </StackPane.margin>
-                </ImageView>
                 <ImageView fitHeight="42.0" fitWidth="42.0" onMouseClicked="#selectInfo" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
                     <Image url="@../Images/info.png" />
                     <StackPane.margin>

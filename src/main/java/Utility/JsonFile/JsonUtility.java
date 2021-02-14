@@ -278,4 +278,34 @@ public class JsonUtility {
         }
     }
 
+    public List<String> getListOf(String jsonPath)
+    {
+        //List for names
+        List<String> list = new ArrayList<>();
+
+        //JSON parser object to parse read file
+        JSONParser jsonParser = new JSONParser();
+        String infoValue = "";
+
+        try (FileReader reader = new FileReader(jsonPath)) {
+            //Read JSON file
+            Object obj = jsonParser.parse(reader);
+
+            JSONArray listJSON = (JSONArray) obj;
+
+            //Iterate over array
+            for (Object JO : listJSON) {
+                if (JO instanceof JSONObject)
+                {
+                    //try catch sinon quand il rencontre une partie avec le mauvais nom il s'arrète
+                    try {
+                        infoValue =(((JSONObject) JO).keySet()).toString();
+                        infoValue = infoValue.replaceAll("(^\\[|\\]$)", "");
+                        list.add(infoValue);
+                    }catch (Exception ignored){}
+                }
+            }
+        } catch (Exception ignored) {}
+        return list;
+    }
 }

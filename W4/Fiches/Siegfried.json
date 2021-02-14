@@ -1,1 +1,43 @@
-[{"Description":{"Statut":"Argent 2","Taille":"1m67","Yeux":"Gris pâles","Race":"Humain","Classe":"Guerrier","Échelon":"Prêtre-guerrier","Nom":"Siegfried","Carrière":"Prêtre-guerrier","Schéma":"Novice, prêtre-guerrier","Cheveux":"Gris","Age":"37"}},{"Points":{"Expérience":"1300","Résilience":"2","Marche":"8","Motivation":"Liberté","Destin":"3","Course":"16","Détermination":"2","Chance":"2","Mouvement":"4"},"Caractéristiques":{"CC":"33","CT":"24","E":"35","F":"35","Ag":"31","Dex":"29","Soc":"38","FM":"37","I":"31","Int":"38"}},{}]
+[
+  {
+    "Description": {
+      "Statut": "Argent 2",
+      "Taille": "1m67",
+      "Yeux": "Gris pâles",
+      "Race": "Humain",
+      "Classe": "Guerrier",
+      "Échelon": "Prêtre-guerrier",
+      "Nom": "Siegfried",
+      "Carrière": "Prêtre-guerrier",
+      "Schéma": "Novice, prêtre-guerrier",
+      "Cheveux": "Gris",
+      "Age": "37"
+    }
+  },
+  {
+    "Points": {
+      "Expérience": "1300",
+      "Résilience": "2",
+      "Marche": "8",
+      "Motivation": "Liberté",
+      "Destin": "3",
+      "Course": "16",
+      "Détermination": "2",
+      "Chance": "2",
+      "Mouvement": "4"
+    },
+    "Caractéristiques": {
+      "CC": "33",
+      "CT": "24",
+      "E": "35",
+      "F": "35",
+      "Ag": "31",
+      "Dex": "29",
+      "Soc": "38",
+      "FM": "37",
+      "I": "31",
+      "Int": "38"
+    }
+  },
+  {}
+]
